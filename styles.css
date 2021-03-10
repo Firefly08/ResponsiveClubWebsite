@@ -81,10 +81,8 @@ img {
 .top-container {
     display: grid;
     grid-gap: 20px;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-row: 1 / 2;
+    grid-column: 2 / 6;
 }
 
 /* Showcase */
@@ -277,6 +275,7 @@ img {
     grid-row: 7;
     grid-column: 2 / 6;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 4% 0 0 0;
 }
 
 .portfolio img {
@@ -303,15 +302,38 @@ img {
 
 /* Contact */
 .contact {
+    grid-row: 8;
+    grid-column: 2 / 6;
+    margin: 2% 0 0 0;
+}
+
+.contact h2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-row: 8;
+    grid-column: 2 / 6;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1%;
+}
+
+.contactus {
     background: var(--primary);
     box-shadow: var(--shadow);
     display: grid;
-    grid-gap: 30px;
-    grid-row: 8;
+    grid-gap: 50px;
+    grid-row: 9;
     grid-column: 2 / 6;
     padding: 3rem;
-    grid-auto-flow: column;
-    margin-top: 3%;
+    grid-auto-flow: dense;
+    margin: 0 0 1% 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+#formtext {
+    font-weight: bold;
 }
 
 /* Footer */
@@ -323,7 +345,7 @@ footer {
     padding: 1rem;
     display: grid;
     grid-gap: 20px;
-    grid-row: 9;
+    grid-row: 10;
     grid-column: 2 / 6;
     font-weight: bold;
 }
