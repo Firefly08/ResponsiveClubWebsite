@@ -165,7 +165,7 @@ img {
     grid-row: 4;
     grid-auto-flow: row;
     grid-column: 2 / 6;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .box {
@@ -276,7 +276,7 @@ img {
     grid-gap: 20px;
     grid-row: 7;
     grid-column: 2 / 6;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     margin: 4% 0 0 0;
 }
 
